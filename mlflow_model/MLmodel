@@ -1,0 +1,84 @@
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: null
+model_size_bytes: 373630
+model_uuid: c1f6e7ef281f41b7ba98ffece4660064
+prompts: null
+signature:
+  inputs: '[{"type": "double", "name": "OBS_30_CNT_SOCIAL_CIRCLE", "required": true},
+    {"type": "double", "name": "NAME_CONTRACT_STATUS", "required": true}, {"type":
+    "double", "name": "CREDIT_ACTIVE__lambda_", "required": true}, {"type": "double",
+    "name": "SK_ID_PREV_x", "required": true}, {"type": "double", "name": "EXT_SOURCE_3",
+    "required": true}, {"type": "double", "name": "EXT_SOURCE_2", "required": true},
+    {"type": "double", "name": "INST_DELAY_MAX", "required": true}, {"type": "boolean",
+    "name": "WEEKDAY_APPR_PROCESS_START_MONDAY", "required": true}, {"type": "boolean",
+    "name": "WEEKDAY_APPR_PROCESS_START_THURSDAY", "required": true}, {"type": "boolean",
+    "name": "WEEKDAY_APPR_PROCESS_START_SATURDAY", "required": true}, {"type": "boolean",
+    "name": "WEEKDAY_APPR_PROCESS_START_FRIDAY", "required": true}, {"type": "double",
+    "name": "DEF_30_CNT_SOCIAL_CIRCLE", "required": true}, {"type": "boolean", "name":
+    "WEEKDAY_APPR_PROCESS_START_TUESDAY", "required": true}, {"type": "boolean", "name":
+    "NAME_FAMILY_STATUS_Married", "required": true}, {"type": "double", "name": "DAYS_EMPLOYED",
+    "required": true}, {"type": "double", "name": "AMT_CREDIT_x", "required": true},
+    {"type": "boolean", "name": "NAME_FAMILY_STATUS_Separated", "required": true},
+    {"type": "boolean", "name": "WEEKDAY_APPR_PROCESS_START_WEDNESDAY", "required":
+    true}, {"type": "boolean", "name": "WEEKDAY_APPR_PROCESS_START_SUNDAY", "required":
+    true}, {"type": "boolean", "name": "NAME_FAMILY_STATUS_Single___not_married",
+    "required": true}, {"type": "boolean", "name": "NAME_FAMILY_STATUS_Civil_marriage",
+    "required": true}, {"type": "boolean", "name": "OCCUPATION_TYPE_Laborers", "required":
+    true}, {"type": "double", "name": "INST_TOTAL_PAID", "required": true}, {"type":
+    "double", "name": "INST_PAY_DIFF_MIN", "required": true}, {"type": "double", "name":
+    "DAYS_LAST_PHONE_CHANGE", "required": true}, {"type": "double", "name": "AMT_REQ_CREDIT_BUREAU_QRT",
+    "required": true}, {"type": "boolean", "name": "NAME_EDUCATION_TYPE_Secondary___secondary_special",
+    "required": true}, {"type": "boolean", "name": "NAME_FAMILY_STATUS_Widow", "required":
+    true}, {"type": "boolean", "name": "NAME_INCOME_TYPE_State_servant", "required":
+    true}, {"type": "double", "name": "AMT_CREDIT_SUM_DEBT_mean", "required": true},
+    {"type": "long", "name": "AGE", "required": true}, {"type": "boolean", "name":
+    "NAME_EDUCATION_TYPE_Higher_education", "required": true}, {"type": "long", "name":
+    "FLAG_EMP_PHONE", "required": true}, {"type": "boolean", "name": "ORGANIZATION_TYPE_XNA",
+    "required": true}, {"type": "boolean", "name": "OCCUPATION_TYPE_Drivers", "required":
+    true}, {"type": "boolean", "name": "NAME_INCOME_TYPE_Commercial_associate", "required":
+    true}, {"type": "double", "name": "CREDIT_TYPE_nunique", "required": true}, {"type":
+    "double", "name": "SK_DPD_x", "required": true}, {"type": "double", "name": "AMT_ANNUITY",
+    "required": true}, {"type": "long", "name": "CODE_GENDER", "required": true},
+    {"type": "boolean", "name": "OCCUPATION_TYPE_Sales_staff", "required": true},
+    {"type": "boolean", "name": "NAME_INCOME_TYPE_Working", "required": true}, {"type":
+    "boolean", "name": "ORGANIZATION_TYPE_Business_Entity_Type_3", "required": true},
+    {"type": "boolean", "name": "NAME_EDUCATION_TYPE_Incomplete_higher", "required":
+    true}, {"type": "long", "name": "DAYS_ID_PUBLISH", "required": true}, {"type":
+    "long", "name": "NAME_CONTRACT_TYPE", "required": true}, {"type": "long", "name":
+    "FLAG_OWN_CAR", "required": true}, {"type": "double", "name": "DAYS_CREDIT_max",
+    "required": true}, {"type": "boolean", "name": "ORGANIZATION_TYPE_Self_employed",
+    "required": true}, {"type": "boolean", "name": "OCCUPATION_TYPE_Core_staff", "required":
+    true}, {"type": "boolean", "name": "NAME_TYPE_SUITE_Unaccompanied", "required":
+    true}, {"type": "boolean", "name": "OCCUPATION_TYPE_Security_staff", "required":
+    true}, {"type": "boolean", "name": "OCCUPATION_TYPE_Managers", "required": true},
+    {"type": "boolean", "name": "NAME_HOUSING_TYPE_House___apartment", "required":
+    true}, {"type": "double", "name": "INST_PAY_DIFF_MEAN", "required": true}, {"type":
+    "double", "name": "DAYS_CREDIT_mean", "required": true}, {"type": "double", "name":
+    "REGION_POPULATION_RELATIVE", "required": true}, {"type": "boolean", "name": "NAME_TYPE_SUITE_Family",
+    "required": true}, {"type": "boolean", "name": "NAME_EDUCATION_TYPE_Lower_secondary",
+    "required": true}, {"type": "long", "name": "FLAG_PHONE", "required": true}, {"type":
+    "double", "name": "AMT_REQ_CREDIT_BUREAU_MON", "required": true}, {"type": "boolean",
+    "name": "OCCUPATION_TYPE_Cleaning_staff", "required": true}, {"type": "boolean",
+    "name": "NAME_HOUSING_TYPE_With_parents", "required": true}, {"type": "long",
+    "name": "HOUR_APPR_PROCESS_START", "required": true}, {"type": "long", "name":
+    "SK_ID_CURR", "required": true}, {"type": "long", "name": "FLAG_OWN_REALTY", "required":
+    true}]'
+  outputs: '[{"type": "long", "name": "TARGET", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-09-04 13:16:54.603110'
